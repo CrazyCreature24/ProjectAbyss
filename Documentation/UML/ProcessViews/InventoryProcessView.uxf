@@ -1,0 +1,254 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLState</id><coordinates><x>414</x><y>90</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>117</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>369</x><y>270</y><w>423</w><h>288</h></coordinates><panel_attributes>if (Equipment != nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>558</x><y>171</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>234</y><w>27</w><h>180</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>558</x><y>396</y><w>36</w><h>99</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>261</x><y>0</y><w>612</w><h>63</h></coordinates><panel_attributes>AddToInventory(AEquipmentBase*)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>630</x><y>423</y><w>153</w><h>36</h></coordinates><panel_attributes>Inventory[Index] == Equipment
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>423</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>378</x><y>297</y><w>405</w><h>252</h></coordinates><panel_attributes>for (int32 Index = 0; Index &lt; Inventory.Num(); ++Index)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>387</x><y>324</y><w>387</w><h>216</h></coordinates><panel_attributes>if (Inventory[Index] == nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>351</x><y>270</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>351</x><y>297</y><w>90</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>351</x><y>324</y><w>90</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>603</x><y>405</y><w>90</w><h>27</h></coordinates><panel_attributes>4.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>882</x><y>0</y><w>765</w><h>63</h></coordinates><panel_attributes>AddToHotbarInventory(AEquipmentBase*)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1008</x><y>279</y><w>432</w><h>288</h></coordinates><panel_attributes>if (Equipment != nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1197</x><y>180</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1206</x><y>243</y><w>27</w><h>180</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1197</x><y>405</y><w>36</w><h>99</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1269</x><y>405</y><w>153</w><h>36</h></coordinates><panel_attributes>Inventory[Index] == Equipment
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1224</x><y>405</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>990</x><y>279</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>990</x><y>306</y><w>90</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>990</x><y>333</y><w>90</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1242</x><y>396</y><w>90</w><h>27</h></coordinates><panel_attributes>4.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1206</x><y>126</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLState</id><coordinates><x>1053</x><y>99</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1224</x><y>459</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1242</x><y>450</y><w>90</w><h>27</h></coordinates><panel_attributes>5.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1269</x><y>459</y><w>162</w><h>36</h></coordinates><panel_attributes>ChangeHotbarImage(Index, Equipment)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1026</x><y>333</y><w>396</w><h>216</h></coordinates><panel_attributes>if (Inventory[Index] == nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1017</x><y>306</y><w>414</w><h>252</h></coordinates><panel_attributes>for (int32 Index = 0; Index &lt; Inventory.Num(); ++Index)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1674</x><y>279</y><w>432</w><h>171</h></coordinates><panel_attributes>if (Index &gt;= 0 &amp;&amp; Index &lt; Inventory.Num())
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1854</x><y>180</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1863</x><y>243</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1854</x><y>324</y><w>36</w><h>99</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1926</x><y>333</y><w>180</w><h>36</h></coordinates><panel_attributes>Inventory[Index] == nullptr
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1881</x><y>324</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1647</x><y>279</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1899</x><y>315</y><w>90</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1710</x><y>99</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1881</x><y>378</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1899</x><y>369</y><w>90</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1926</x><y>378</y><w>162</w><h>36</h></coordinates><panel_attributes>ChangeHotbarImage(Index, Equipment)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1638</x><y>0</y><w>522</w><h>63</h></coordinates><panel_attributes>RemoveFromInventory(Int32)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2268</x><y>0</y><w>522</w><h>63</h></coordinates><panel_attributes>SwapEquipment(Int32, Int32)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2313</x><y>279</y><w>477</w><h>216</h></coordinates><panel_attributes>if (IndexA &gt;= 0 &amp;&amp; IndexA &lt; Inventory.Num() &amp;&amp; IndexB &gt;= 0 &amp;&amp; IndexB &lt; Inventory.Num())
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2493</x><y>180</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2502</x><y>243</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2493</x><y>324</y><w>36</w><h>162</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2565</x><y>333</y><w>180</w><h>36</h></coordinates><panel_attributes>Inventory.Swap(IndexA, IndexB)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2520</x><y>324</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2286</x><y>279</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2538</x><y>315</y><w>90</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2502</x><y>126</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLState</id><coordinates><x>2349</x><y>99</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2520</x><y>378</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2538</x><y>369</y><w>90</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2565</x><y>378</y><w>162</w><h>36</h></coordinates><panel_attributes>ChangeHotbarImage(Index, Inventory[IndexA])
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2520</x><y>432</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2565</x><y>432</y><w>162</w><h>36</h></coordinates><panel_attributes>ChangeHotbarImage(Index, Inventory[IndexB])
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2538</x><y>423</y><w>90</w><h>27</h></coordinates><panel_attributes>4.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2826</x><y>0</y><w>1233</w><h>63</h></coordinates><panel_attributes>SwapEquipmentBetweenInventories(UInventoryComponent*, Int32, Int32)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>3150</x><y>270</y><w>603</w><h>351</h></coordinates><panel_attributes>if (IndexA &gt;= 0 &amp;&amp; IndexA &lt; Inventory.Num() &amp;&amp; IndexB &gt;= 0 &amp;&amp; IndexB &lt; OtherInventory-&gt;Inventory.Num())
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3366</x><y>162</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3375</x><y>225</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3366</x><y>306</y><w>36</w><h>108</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3438</x><y>315</y><w>333</w><h>63</h></coordinates><panel_attributes>AEquipmentBase* Temp = Inventory[IndexA]
+Inventory[IndexA] = OtherInventory-&gt;Inventory[IndexB]
+OtherInventory-&gt;Inventory[IndexB] = Temp
+ChangeHotbarImage(IndexA, Inventory[IndexA])
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3393</x><y>306</y><w>63</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;90;50;90;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>3159</x><y>261</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3411</x><y>297</y><w>27</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3375</x><y>108</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLState</id><coordinates><x>3222</x><y>81</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3105</x><y>261</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>3168</x><y>423</y><w>495</w><h>81</h></coordinates><panel_attributes>If (Inventory[IndexA] != nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3366</x><y>450</y><w>36</w><h>45</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>3168</x><y>513</y><w>495</w><h>81</h></coordinates><panel_attributes>If (OtherInventory-&gt;Inventory[IndexB] != nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3366</x><y>540</y><w>36</w><h>45</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3375</x><y>405</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>3375</x><y>486</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>3393</x><y>450</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>3150</x><y>405</y><w>27</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3150</x><y>495</y><w>27</w><h>27</h></coordinates><panel_attributes>4.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3438</x><y>459</y><w>216</w><h>27</h></coordinates><panel_attributes>Inventory[IndexA]-&gt;Equip(GetOwner())
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3393</x><y>540</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>3438</x><y>540</y><w>216</w><h>36</h></coordinates><panel_attributes>OtherInventory-&gt;Inventory[IndexB]-&gt;Equip(OtherInventory-&gt;GetOwner())
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>423</x><y>711</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>738</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>378</x><y>891</y><w>423</w><h>162</h></coordinates><panel_attributes>for (AEquipmentBase* Equipment : Inventory)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>567</x><y>792</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>855</y><w>27</w><h>126</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>567</x><y>963</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>612</x><y>972</y><w>153</w><h>36</h></coordinates><panel_attributes>return Equipment
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>387</x><y>918</y><w>405</w><h>126</h></coordinates><panel_attributes>if (Equipment &amp;&amp; Equipment-&gt;IsA(EquipmentType))
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>360</x><y>891</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>360</x><y>918</y><w>90</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>612</x><y>963</y><w>90</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>639</y><w>1188</w><h>63</h></coordinates><panel_attributes>GetEquipmentByType(TSubclassOf&lt;AEquipmentBase&gt; EquipmentType)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1359</x><y>711</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1512</x><y>738</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1314</x><y>891</y><w>423</w><h>234</h></coordinates><panel_attributes>if (Index &gt;= 0 &amp;&amp; Index &lt; Inventory.Num())
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1503</x><y>792</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1512</x><y>855</y><w>27</w><h>90</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1503</x><y>1017</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1296</x><y>639</y><w>495</w><h>63</h></coordinates><panel_attributes>DropEquipment(int32 Index)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1575</x><y>1035</y><w>153</w><h>36</h></coordinates><panel_attributes>Inventory.Remove(Equipment)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1530</x><y>1035</y><w>63</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1332</x><y>990</y><w>387</w><h>117</h></coordinates><panel_attributes>if (Equipment)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1296</x><y>891</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1548</x><y>918</y><w>90</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1314</x><y>990</y><w>90</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>819</x><y>711</y><w>324</w><h>36</h></coordinates><panel_attributes>
+AEquipmentBase
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>963</x><y>792</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>972</x><y>738</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>612</x><y>855</y><w>387</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;410;50;410;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1701</x><y>855</y><w>234</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;110;240;110;240;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>1755</x><y>711</y><w>324</w><h>36</h></coordinates><panel_attributes>
+AEquipmentBase
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1908</x><y>738</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1899</x><y>792</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1503</x><y>927</y><w>36</w><h>54</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1539</x><y>936</y><w>207</w><h>63</h></coordinates><panel_attributes>AEquipmentBase* Equipment = Inventory[Index]
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1512</x><y>972</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Text</id><coordinates><x>1548</x><y>1017</y><w>27</w><h>27</h></coordinates><panel_attributes>4.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2295</x><y>639</y><w>1071</w><h>63</h></coordinates><panel_attributes>ChangeHotbarImage(int32 Index, AEquipmentBase* Equipment)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2340</x><y>891</y><w>522</w><h>351</h></coordinates><panel_attributes>if (PlayerPawn)
+--
+transparency=100
+layer=-5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2520</x><y>792</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2529</x><y>855</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Text</id><coordinates><x>2565</x><y>927</y><w>297</w><h>36</h></coordinates><panel_attributes>ADiverController* PlayerController = Cast&lt;ADiverController&gt;(PlayerPawn-&gt;GetController())
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2547</x><y>855</y><w>747</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;120;810;120;810;10</additional_attributes></element><element><id>Text</id><coordinates><x>2313</x><y>891</y><w>90</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2565</x><y>909</y><w>27</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2529</x><y>738</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLState</id><coordinates><x>2376</x><y>711</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>2754</x><y>711</y><w>324</w><h>36</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>3114</x><y>711</y><w>324</w><h>36</h></coordinates><panel_attributes>
+ADiverController
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2898</x><y>792</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2907</x><y>738</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3258</x><y>792</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3267</x><y>738</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>2547</x><y>819</y><w>369</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;390;10</additional_attributes></element><element><id>Text</id><coordinates><x>2574</x><y>792</y><w>207</w><h>36</h></coordinates><panel_attributes>ADiverCharacter* PlayerPawn = Cast&lt;ADiverCharacter&gt;(GetOwner())
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2520</x><y>936</y><w>36</w><h>36</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2529</x><y>963</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2358</x><y>1017</y><w>486</w><h>90</h></coordinates><panel_attributes>if (Equipment)
+--
+transparency=100
+layer=-1
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2358</x><y>1116</y><w>486</w><h>90</h></coordinates><panel_attributes>if (Equipment == nullptr)
+--
+transparency=100
+layer=-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2349</x><y>990</y><w>504</w><h>234</h></coordinates><panel_attributes>if (PlayerController)
+--
+transparency=100
+layer=-3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2520</x><y>1044</y><w>36</w><h>54</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2529</x><y>1089</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2520</x><y>1143</y><w>36</w><h>54</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2574</x><y>774</y><w>90</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2574</x><y>1044</y><w>297</w><h>36</h></coordinates><panel_attributes>PlayerController-&gt;HotbarWidget-&gt;SetImage(Index, Equipment-&gt;HotbarImage)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2313</x><y>999</y><w>27</w><h>27</h></coordinates><panel_attributes>4.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2556</x><y>1044</y><w>27</w><h>27</h></coordinates><panel_attributes>5.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2547</x><y>864</y><w>747</w><h>234</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;240;810;240;810;10</additional_attributes></element><element><id>Text</id><coordinates><x>2574</x><y>1152</y><w>297</w><h>36</h></coordinates><panel_attributes>PlayerController-&gt;HotbarWidget-&gt;SetImage(Index, PlayerController-&gt;HotbarWidget-&gt;DefaultTexture);
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2556</x><y>1152</y><w>27</w><h>27</h></coordinates><panel_attributes>6.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2547</x><y>855</y><w>747</w><h>351</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;370;810;370;810;10</additional_attributes></element><element><id>Text</id><coordinates><x>3663</x><y>675</y><w>630</w><h>63</h></coordinates><panel_attributes>SetEquipmentVisiblility(uint32 Index)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>3690</x><y>936</y><w>612</w><h>288</h></coordinates><panel_attributes>if (Inventory[Index] != nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3888</x><y>837</y><w>36</w><h>72</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3897</x><y>900</y><w>27</w><h>135</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Text</id><coordinates><x>3672</x><y>936</y><w>99</w><h>27</h></coordinates><panel_attributes>1.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3897</x><y>783</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLState</id><coordinates><x>3744</x><y>756</y><w>324</w><h>36</h></coordinates><panel_attributes>
+UInventoryComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>3708</x><y>963</y><w>585</w><h>252</h></coordinates><panel_attributes>for (int32 i = 0; i &lt; Inventory.Num(); ++i)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3690</x><y>963</y><w>99</w><h>27</h></coordinates><panel_attributes>2.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>3726</x><y>990</y><w>558</w><h>216</h></coordinates><panel_attributes>if (Inventory[i] != nullptr)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>3744</x><y>1080</y><w>531</w><h>117</h></coordinates><panel_attributes>if (Inventory[i] == Inventory[Index] &amp;&amp; Inventory[Index]-&gt;ActorHasTag("Photography Camera") == false)
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3888</x><y>1017</y><w>36</w><h>45</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3708</x><y>990</y><w>99</w><h>27</h></coordinates><panel_attributes>3.
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3933</x><y>1017</y><w>279</w><h>36</h></coordinates><panel_attributes>4.
+Inventory[i]-&gt;MeshComponent-&gt;SetVisibility(false)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3888</x><y>1125</y><w>36</w><h>45</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3897</x><y>1053</y><w>27</w><h>90</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Text</id><coordinates><x>3933</x><y>1125</y><w>279</w><h>36</h></coordinates><panel_attributes>5.
+Inventory[i]-&gt;MeshComponent-&gt;SetVisibility(true)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element></diagram>

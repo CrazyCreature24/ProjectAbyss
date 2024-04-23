@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLClass</id><coordinates><x>581</x><y>19</y><w>105</w><h>21</h></coordinates><panel_attributes>Loaded into game</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>831</y><w>105</w><h>28</h></coordinates><panel_attributes>Resumes progress 
+of where players were</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>413</x><y>33</y><w>231</w><h>812</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>20;1140;10;120;310;120;310;10</additional_attributes></element><element><id>Text</id><coordinates><x>679</x><y>68</y><w>98</w><h>49</h></coordinates><panel_attributes>If this is the first time 
+loading the map, 
+play tutorial level &amp;
+the custscene
+style=wordwrap
+fg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>623</x><y>33</y><w>112</w><h>175</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;230;140;120;10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>679</x><y>194</y><w>84</w><h>21</h></coordinates><panel_attributes>Play tutorial level</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>623</x><y>278</y><w>84</w><h>28</h></coordinates><panel_attributes>Skip tutorial button
+in escape menu
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>658</x><y>208</y><w>77</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;100;10;60;90;60;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>735</x><y>278</y><w>84</w><h>28</h></coordinates><panel_attributes>Once tutorial is fully,
+completed
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>714</x><y>208</y><w>77</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>90;100;90;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>609</x><y>299</y><w>70</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;80;60;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>609</x><y>299</y><w>182</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;240;60;240;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>553</x><y>243</y><w>98</w><h>28</h></coordinates><panel_attributes>"Are you sure you want
+to skip tutorial?" Text
+bg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>264</y><w>49</w><h>35</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;50;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>504</x><y>327</y><w>112</w><h>28</h></coordinates><panel_attributes>Play cutscene of lowering
+boat into the hole</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>497</x><y>754</y><w>126</w><h>28</h></coordinates><panel_attributes>PC gives them a basic first
+mission to complete.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>705</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>497</x><y>824</y><w>126</w><h>35</h></coordinates><panel_attributes>Players are on their own now,
+completing missions and 
+progressing the story</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>348</y><w>21</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>504</x><y>390</y><w>112</w><h>28</h></coordinates><panel_attributes>Play cutscene of lowering
+boat into the hole</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>439</y><w>147</w><h>42</h></coordinates><panel_attributes>Big fish hits boat, wire snaps 
+players are sent down into 
+the big area, pass out from trauma</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>483</x><y>509</y><w>154</w><h>49</h></coordinates><panel_attributes>Small cutscene, Screen fades to black, 
+players open eyes to see theyre in a 
+huge cavern. They look around, then
+up to see crystals on ceiling
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>665</x><y>446</y><w>161</w><h>28</h></coordinates><panel_attributes>They got to where they wanted to go,
+but now the boat is damaged. 
+bg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>483</x><y>586</y><w>154</w><h>49</h></coordinates><panel_attributes>Players gain control, they have to click 
+on the PC to see emergency message
+"Please fix things with repair tool
+found in boat storage"</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>665</x><y>509</y><w>161</w><h>42</h></coordinates><panel_attributes>Players cant control until end of 
+cutscene, they hear beeping and see
+red lights blinking from the PC. 
+
+bg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>483</x><y>663</y><w>154</w><h>49</h></coordinates><panel_attributes>Players fix things, lights on boat
+turn on, PC starts up properly
+Email notification is sent through
+players check it to see mission</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>665</x><y>670</y><w>168</w><h>28</h></coordinates><panel_attributes>Email = mission from HEIR to take simple 
+picture of fish in the shallows.
+bg=blue
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>775</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>411</y><w>21</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>474</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>551</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>628</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>453</y><w>49</w><h>21</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>523</y><w>49</w><h>21</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>677</y><w>49</w><h>21</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element></diagram>

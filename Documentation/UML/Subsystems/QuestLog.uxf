@@ -1,0 +1,49 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>610</x><y>410</y><w>540</w><h>410</h></coordinates><panel_attributes>&lt;&lt;UGameInstanceSubsystem&gt;&gt;
+_UQuestLog_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
++ CurrentActiveQuests: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
++ CompletedQuests: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
++ CurrentTrackedQuest: FName
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
++ CurrentQuests: TArray&lt;AQuestBase*&gt;
+
+--
+UFUNCTION(BlueprintCallable)
++ AddNewQuest(QuestID: FName): void
+
+UFUNCTION(BlueprintCallable)
++ CompleteQuest: void
+
+UFUNCTION(BlueprintCallable)
++ QueryActiveQuests(QuestID: FName): bool
+
+UFUNCTION(BlueprintCallable)
++ TrackQuest(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>80</y><w>540</w><h>330</h></coordinates><panel_attributes>&lt;&lt;AActor&gt;&gt;
+_AQuestBase_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+QuestID: FName
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+QuestDetails: FQuestDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+CurrentStage: int
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+CurrentStageDetails: FStageDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+CurrentObjectiveDetails: TMap&lt;FString, int&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+IsComplete: bool
+--
+AQuestBase()</panel_attributes><additional_attributes></additional_attributes></element></diagram>

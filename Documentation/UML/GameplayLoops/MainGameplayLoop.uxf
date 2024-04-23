@@ -1,0 +1,47 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>bg=#f4cccc
+</help_text><element><id>Relation</id><coordinates><x>196</x><y>532</y><w>21</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>609</y><w>21</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>322</x><y>511</y><w>140</w><h>42</h></coordinates><panel_attributes>Can buy equipment or upgrades
+from the shop in PC when
+they want.
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>266</x><y>679</y><w>84</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>546</x><y>658</y><w>147</w><h>56</h></coordinates><panel_attributes>???
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>476</x><y>679</y><w>84</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>105</x><y>420</y><w>616</w><h>308</h></coordinates><panel_attributes>OnBoatState
+fontsize=40
+bg=#ffcdcd
+layer=0</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>686</x><y>679</y><w>140</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>180;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>756</x><y>518</y><w>959</w><h>273</h></coordinates><panel_attributes>ExplorationState
+fontsize=40
+bg=#cdd7ff
+layer=-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>518</y><w>84</w><h>28</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>100;20;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>154</x><y>518</y><w>105</w><h>21</h></coordinates><panel_attributes>All players on boat
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>147</x><y>588</y><w>119</w><h>28</h></coordinates><panel_attributes>Players choose which
+main mission they want to do.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>133</x><y>665</y><w>140</w><h>42</h></coordinates><panel_attributes>One drives boat, while
+others direct where to go while
+looking at PC</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>336</x><y>672</y><w>147</w><h>35</h></coordinates><panel_attributes>Once players are where they want
+to drop, 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1330</x><y>665</y><w>161</w><h>49</h></coordinates><panel_attributes>If a player dies, they drop their 
+equipment (Minus permanent), and 
+camera roll drops. Other players can
+pick these items up if they get near it.
+
+
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1169</x><y>686</y><w>105</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1484</x><y>679</y><w>42</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1512</x><y>665</y><w>196</w><h>49</h></coordinates><panel_attributes>Players become divebots when they die,
+can move around with limited interaction, 
+basically a spectator. </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1197</x><y>574</y><w>161</w><h>28</h></coordinates><panel_attributes>Players decide to end the expedition,
+and come back up to the surface. 
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1386</x><y>567</y><w>182</w><h>35</h></coordinates><panel_attributes>Once back to the surface players can upload
+their photos to the PC.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1351</x><y>581</y><w>49</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>350</y><w>1295</w><h>231</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;240;10;10;1830;10;1830;310</additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>350</y><w>1435</w><h>329</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;240;10;10;1830;10;1830;130;2030;130;2030;450</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1260</x><y>679</y><w>42</w><h>28</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1295</x><y>686</y><w>49</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1274</x><y>595</y><w>21</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>812</x><y>350</y><w>679</w><h>231</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;950;10;950;310</additional_attributes></element><element><id>Relation</id><coordinates><x>1512</x><y>434</y><w>119</w><h>238</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10;150;320</additional_attributes></element><element><id>Text</id><coordinates><x>756</x><y>294</y><w>280</w><h>49</h></coordinates><panel_attributes>Gameplay States
+fontsize=50</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>812</x><y>672</y><w>147</w><h>28</h></coordinates><panel_attributes>Players swim down to look for a 
+cave entrance in the targeted area. 
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1029</x><y>672</y><w>147</w><h>35</h></coordinates><panel_attributes>Once all players are near the cave, 
+a (vote is started?) to enter the 
+cave.
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>952</x><y>679</y><w>91</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>350</y><w>70</w><h>119</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>80;150;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>455</y><w>140</w><h>42</h></coordinates><panel_attributes>Players can respawn by others
+uploading pictures. A fee is
+deducted on earnings per death.
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>322</x><y>567</y><w>140</w><h>42</h></coordinates><panel_attributes>Can change equipment at 
+any time in this stage.
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>518</y><w>84</w><h>84</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>100;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1274</x><y>700</y><w>21</w><h>189</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;250;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>532</x><y>812</y><w>896</w><h>238</h></coordinates><panel_attributes>CaveState
+fontsize=40
+bg=#cdd7ff
+layer=-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1204</x><y>875</y><w>147</w><h>42</h></coordinates><panel_attributes>Players enter a cave and look for
+fish that are currently in
+their missions.
+layer=1</panel_attributes><additional_attributes></additional_attributes></element></diagram>

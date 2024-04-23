@@ -1,0 +1,72 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>657</x><y>38</y><w>135</w><h>27</h></coordinates><panel_attributes>Game opened</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>657</x><y>110</y><w>135</w><h>45</h></coordinates><panel_attributes>Unreal Introcard
+Astralwater Introcard
+Game rating Introcard
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>56</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>639</x><y>200</y><w>171</w><h>45</h></coordinates><panel_attributes>"Press any key to continue"
+screen with view of boat 
+&amp; Dive Cage in main menu map
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>146</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>236</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>612</x><y>290</y><w>225</w><h>45</h></coordinates><panel_attributes>Animation starts to move
+camera and dive cage deeper.
+Once at bottom, opens main menu widget</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>783</x><y>119</y><w>99</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>30;110;90;110;90;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>873</x><y>155</y><w>126</w><h>36</h></coordinates><panel_attributes>Skip intro cards 
+by pressing any key
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>326</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>612</x><y>380</y><w>225</w><h>45</h></coordinates><panel_attributes>Giant fish swims into focus in background,
+Menu buttons appear, and fish eye starts
+to track mouse. </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>416</y><w>261</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;30;270;30;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>416</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>416</y><w>252</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>260;60;260;30;10;30;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>470</y><w>54</w><h>27</h></coordinates><panel_attributes>Play
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>693</x><y>470</y><w>54</w><h>27</h></coordinates><panel_attributes>Options
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>918</x><y>470</y><w>54</w><h>27</h></coordinates><panel_attributes>Quit
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>414</x><y>533</y><w>153</w><h>54</h></coordinates><panel_attributes>Loads into lobby server map
+Host/join widget created</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>632</y><w>54</w><h>27</h></coordinates><panel_attributes>Host
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>549</x><y>632</y><w>54</w><h>27</h></coordinates><panel_attributes>Join
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>578</y><w>108</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;30;100;30;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>578</y><w>117</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>110;60;110;30;10;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>488</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>639</x><y>533</y><w>162</w><h>27</h></coordinates><panel_attributes>Open options menu widget</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>488</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>342</x><y>704</y><w>126</w><h>27</h></coordinates><panel_attributes>Hosts server with name</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>650</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>650</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>695</y><w>126</w><h>36</h></coordinates><panel_attributes>Joins any server with 
+same game open</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>722</y><w>108</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>100;70;100;40;10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>722</y><w>117</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;70;10;40;110;40;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>414</x><y>785</y><w>153</w><h>36</h></coordinates><panel_attributes>Loads into lobby waiting 
+room map</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>812</y><w>27</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>495</x><y>830</y><w>126</w><h>63</h></coordinates><panel_attributes>If server has enough players (2), start game
+style=wordwrap
+fg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>884</y><w>108</w><h>27</h></coordinates><panel_attributes>Loads into game</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>533</y><w>99</w><h>27</h></coordinates><panel_attributes>Closes the game</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>936</x><y>488</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>578</y><w>234</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>240;60;240;30;10;30;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>657</x><y>632</y><w>72</w><h>36</h></coordinates><panel_attributes>Return to 
+main menu
+
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>398</y><w>162</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>130;10;160;10;160;280;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>828</x><y>299</y><w>81</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;120;70;120;70;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>900</x><y>344</y><w>126</w><h>36</h></coordinates><panel_attributes>Skip animation by 
+pressing any key
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1044</x><y>470</y><w>54</w><h>27</h></coordinates><panel_attributes>Credits
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>416</y><w>378</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>400;60;400;30;10;30;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>207</x><y>470</y><w>54</w><h>27</h></coordinates><panel_attributes>Tutorial
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>225</x><y>416</y><w>513</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;60;10;30;550;30;550;10</additional_attributes></element><element><id>Relation</id><coordinates><x>225</x><y>488</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=black
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>153</x><y>533</y><w>153</w><h>54</h></coordinates><panel_attributes>Loads into Tutorial Level map</panel_attributes><additional_attributes></additional_attributes></element></diagram>

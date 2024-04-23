@@ -1,0 +1,383 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLState</id><coordinates><x>690</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1090</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ACreature
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>290</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>600</x><y>1350</y><w>550</w><h>350</h></coordinates><panel_attributes>if OtherActor.HasTag("Creature")
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>640</x><y>1470</y><w>470</w><h>200</h></coordinates><panel_attributes>if Fish.GetIsInFocus() = false
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>850</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>660</x><y>960</y><w>850</w><h>70</h></coordinates><panel_attributes>PhotographyCamera OnFocusBeginOverlap()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1490</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UPhotographyComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>440</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>1270</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>580</x><y>1260</y><w>170</w><h>70</h></coordinates><panel_attributes>If player is aiming camera
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1250</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1240</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1650</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1640</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>850</x><y>1390</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>1310</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;380;120;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>910</x><y>1410</y><w>190</w><h>30</h></coordinates><panel_attributes>Casts OtherActor to ACreature
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>1310</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>1460</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>850</x><y>1540</y><w>40</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>1310</y><w>800</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;320;780;320;780;10</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>1540</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>930</x><y>1540</y><w>180</w><h>40</h></coordinates><panel_attributes>DistanceToFish = GetDistanceTo(OtherActor)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>920</x><y>1610</y><w>190</w><h>30</h></coordinates><panel_attributes>AddFishInFocus()
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>680</x><y>260</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1080</x><y>260</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ACreature
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>280</x><y>260</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>290</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>590</x><y>550</y><w>550</w><h>350</h></coordinates><panel_attributes>if OtherActor.HasTag("Creature")
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>630</x><y>670</y><w>470</w><h>200</h></coordinates><panel_attributes>if Fish.GetIsInFocus() = true
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>840</x><y>440</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>650</x><y>160</y><w>850</w><h>70</h></coordinates><panel_attributes>PhotographyCamera OnFocusEndOverlap()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1480</x><y>260</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UPhotographyComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>430</x><y>440</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>290</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>470</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>570</x><y>460</y><w>170</w><h>70</h></coordinates><panel_attributes>If player is aiming camera
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1240</x><y>290</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1230</x><y>440</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1640</x><y>290</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1630</x><y>440</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>840</x><y>590</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>510</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;380;120;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>900</x><y>610</y><w>190</w><h>30</h></coordinates><panel_attributes>Casts OtherActor to ACreature
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>510</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>660</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>840</x><y>740</y><w>40</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>510</y><w>800</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;320;780;320;780;10</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>740</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>920</x><y>740</y><w>180</w><h>40</h></coordinates><panel_attributes>DistanceToFish = GetDistanceTo(OtherActor)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>910</x><y>810</y><w>190</w><h>30</h></coordinates><panel_attributes>RemoveFishInFocus()
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>2330</x><y>260</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>2730</x><y>260</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UFocusHitboxComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>290</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2310</x><y>550</y><w>420</w><h>130</h></coordinates><panel_attributes>if bIsEnabled == true
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2490</x><y>440</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2130</x><y>170</y><w>1170</w><h>70</h></coordinates><panel_attributes>PhotographyCamera SetFocusHitboxCollision(bool bIsEnabled)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2890</x><y>290</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2880</x><y>440</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2490</x><y>590</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2520</x><y>510</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;380;120;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>2550</x><y>590</y><w>170</w><h>40</h></coordinates><panel_attributes>SetCollisionEnabled(ECollisionEnabled::QueryOnly)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>510</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>660</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2310</x><y>710</y><w>420</w><h>120</h></coordinates><panel_attributes>else
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2490</x><y>740</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2520</x><y>510</y><w>400</w><h>290</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;270;380;270;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>2550</x><y>740</y><w>170</w><h>50</h></coordinates><panel_attributes>SetCollisionEnabled(ECollisionEnabled::NoCollision)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>2310</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2480</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2210</x><y>1340</y><w>600</w><h>500</h></coordinates><panel_attributes>if bIsAimingCamera == false
+--
+transparency=100
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2470</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2110</x><y>970</y><w>1170</w><h>70</h></coordinates><panel_attributes>PhotographyCamera AimCamera(ADiverController* Controller)
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2480</x><y>1310</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLState</id><coordinates><x>2710</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ViewfinderWidget
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2470</x><y>1390</y><w>40</w><h>220</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>1390</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2520</x><y>1370</y><w>150</w><h>30</h></coordinates><panel_attributes>SetAimingMode(true)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>1470</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2520</x><y>1450</y><w>190</w><h>30</h></coordinates><panel_attributes>SetFocusHitboxCollision(true)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2520</x><y>1540</y><w>280</w><h>50</h></coordinates><panel_attributes>SetViewTargetWithBlend(this, 0.3f)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>3100</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UDiverController
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3270</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3260</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>1310</y><w>800</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;260;780;260;780;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2230</x><y>1650</y><w>560</w><h>160</h></coordinates><panel_attributes>if ViewfinderClass
+--
+transparency=100
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2870</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2860</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>1310</y><w>400</w><h>480</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;460;380;460;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2480</x><y>1600</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2470</x><y>1680</y><w>40</w><h>120</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2520</x><y>1730</y><w>280</w><h>50</h></coordinates><panel_attributes>ViewfinderWidget = CreateWidget(GetWorld(), ViewfinderClass)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2480</x><y>1790</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2470</x><y>1870</y><w>40</w><h>210</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>1310</y><w>800</w><h>610</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;590;780;590;780;10</additional_attributes></element><element><id>Text</id><coordinates><x>2520</x><y>1870</y><w>330</w><h>50</h></coordinates><panel_attributes>CameraRotation = Controller-&gt;GetActorEyesViewport()
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>1940</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2520</x><y>1920</y><w>220</w><h>30</h></coordinates><panel_attributes>SetActorRotation(CameraRotation)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2520</x><y>2000</y><w>220</w><h>30</h></coordinates><panel_attributes>UpdateFishInFocus()
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2500</x><y>2020</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>3950</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4120</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4110</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>3770</x><y>970</y><w>770</w><h>70</h></coordinates><panel_attributes>PhotographyCamera StopAimCamera()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4120</x><y>1310</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLState</id><coordinates><x>4350</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UViewfinderWidget
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4110</x><y>1390</y><w>40</w><h>390</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4140</x><y>1390</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>4160</x><y>1370</y><w>150</w><h>30</h></coordinates><panel_attributes>SetAimingMode(false)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4140</x><y>1470</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>4160</x><y>1450</y><w>190</w><h>30</h></coordinates><panel_attributes>SetFocusHitboxCollision(false)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>4160</x><y>1610</y><w>280</w><h>50</h></coordinates><panel_attributes>RemoveFromParent()
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>4740</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UFocusHitboxComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4910</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4900</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4510</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4500</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4140</x><y>1310</y><w>400</w><h>350</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;330;380;330;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>4140</x><y>1310</y><w>800</w><h>410</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;390;780;390;780;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>5130</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+USpringArmComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>5290</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>5300</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLState</id><coordinates><x>1910</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2060</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2070</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>2090</x><y>1270</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2200</x><y>1260</y><w>170</w><h>70</h></coordinates><panel_attributes>If player holds right click
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>3550</x><y>1060</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3700</x><y>1240</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3710</x><y>1090</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Text</id><coordinates><x>3830</x><y>1260</y><w>190</w><h>70</h></coordinates><panel_attributes>If player releases right click
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3730</x><y>1270</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>4140</x><y>1550</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>4160</x><y>1530</y><w>310</w><h>30</h></coordinates><panel_attributes>SetActorRotation(GetOwner()-&gt;GetActorRotation())
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>4160</x><y>1670</y><w>360</w><h>50</h></coordinates><panel_attributes>SetRelativeLocation(DefaultCameraLocation)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4140</x><y>1310</y><w>1190</w><h>470</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;450;1170;450;1170;10</additional_attributes></element><element><id>Text</id><coordinates><x>4160</x><y>1730</y><w>360</w><h>50</h></coordinates><panel_attributes>TargetArmLength = DefaultArmLength;
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>690</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1090</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UPhotographyComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>290</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>600</x><y>2660</y><w>550</w><h>280</h></coordinates><panel_attributes>if bCanTakePicture == true
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>850</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>660</x><y>2270</y><w>850</w><h>70</h></coordinates><panel_attributes>PhotographyCamera TakePicture()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>440</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>2580</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>580</x><y>2550</y><w>170</w><h>70</h></coordinates><panel_attributes>If player presses left click while aiming camera
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1250</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1240</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>850</x><y>2700</y><w>40</w><h>220</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>2620</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;380;120;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>910</x><y>2720</y><w>190</w><h>30</h></coordinates><panel_attributes>TakePicture()
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>2620</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLState</id><coordinates><x>1490</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UGameplayStatics
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1650</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>2620</y><w>800</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;220;780;220;780;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1640</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>930</x><y>2770</y><w>180</w><h>40</h></coordinates><panel_attributes>SetCanTakePicture(false)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>2760</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>1890</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+TimerManager(UNREAL)
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2040</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>2620</y><w>1200</w><h>290</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;270;1180;270;1180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2050</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Text</id><coordinates><x>910</x><y>2820</y><w>230</w><h>40</h></coordinates><panel_attributes>PlaySoundAtLocation(PictureSound)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>910</x><y>2870</y><w>230</w><h>40</h></coordinates><panel_attributes>SetTimer(PictureCooldown)
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>2760</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>3160</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UFocusHitboxComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>2360</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2930</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2730</x><y>2660</y><w>510</w><h>190</h></coordinates><panel_attributes>if FocusHitbox-&gt;GetRelativeLocation().X &lt; DefaultCameraLocation.X + MaxZoomDistance
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2920</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2730</x><y>2270</y><w>850</w><h>70</h></coordinates><panel_attributes>PhotographyCamera ZoomIn()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2510</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2520</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>2540</x><y>2580</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2650</x><y>2550</y><w>170</w><h>70</h></coordinates><panel_attributes>If player scrolls up on scroll wheel
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3320</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3310</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2920</x><y>2700</y><w>40</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2950</x><y>2620</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;380;120;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>2980</x><y>2720</y><w>190</w><h>30</h></coordinates><panel_attributes>AddLocalOffset(NewOffset)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2930</x><y>2620</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLState</id><coordinates><x>3560</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+USpringArmComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3720</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>2950</x><y>2620</y><w>800</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;170;780;170;780;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3710</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2980</x><y>2770</y><w>230</w><h>40</h></coordinates><panel_attributes>TargetArmLength += ZoomSpeed
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>4410</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>4810</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UFocusHitboxComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>4010</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ADiverCharacter
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4580</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>4380</x><y>2660</y><w>450</w><h>190</h></coordinates><panel_attributes>if FocusHitbox-&gt;GetRelativeLocation().X &gt; DefaultCameraLocation.X
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4570</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>4380</x><y>2270</y><w>850</w><h>70</h></coordinates><panel_attributes>PhotographyCamera ZoomOut()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4160</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4170</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>4190</x><y>2580</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>4300</x><y>2550</y><w>170</w><h>70</h></coordinates><panel_attributes>If player scrolls down on scroll wheel
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4970</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4960</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>4570</x><y>2700</y><w>40</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4600</x><y>2620</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;380;120;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>4630</x><y>2720</y><w>190</w><h>30</h></coordinates><panel_attributes>AddLocalOffset(NewOffset)
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>4580</x><y>2620</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLState</id><coordinates><x>5210</x><y>2370</y><w>360</w><h>40</h></coordinates><panel_attributes>
+USpringArmComponent
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>5370</x><y>2400</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>4600</x><y>2620</y><w>800</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;170;780;170;780;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>5360</x><y>2550</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>4630</x><y>2770</y><w>230</w><h>40</h></coordinates><panel_attributes>TargetArmLength -= ZoomSpeed
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>0</y><w>5590</w><h>3150</h></coordinates><panel_attributes>
+bg=red
+layer=-1
+transparency=90</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>670</x><y>3460</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UPhotographyComponent
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>270</x><y>3460</y><w>360</w><h>40</h></coordinates><panel_attributes>
+APhotographyCamera
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>3490</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>580</x><y>3750</y><w>620</w><h>420</h></coordinates><panel_attributes>if CurrentFilm &gt; 0
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>830</x><y>3640</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>500</x><y>3360</y><w>850</w><h>70</h></coordinates><panel_attributes>PhotographyComponent TakePicture()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>420</x><y>3640</y><w>40</w><h>380</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>3490</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>3670</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>560</x><y>3640</y><w>170</w><h>70</h></coordinates><panel_attributes>If player presses left click while aiming camera
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>830</x><y>3790</y><w>40</w><h>170</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>3710</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>3870</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>3800</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>910</x><y>3810</y><w>180</w><h>40</h></coordinates><panel_attributes>CreateTempRenderTar()
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>610</x><y>3840</y><w>220</w><h>70</h></coordinates><panel_attributes>SceneCaptureComponent-&gt;TextureTarget=TempRenderTar
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>3950</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>620</x><y>4000</y><w>550</w><h>150</h></coordinates><panel_attributes>if GetClosestFishInFocus != nullptr
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>830</x><y>4030</y><w>40</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>910</x><y>4040</y><w>280</w><h>40</h></coordinates><panel_attributes>CapturedFish-&gt;Add(GetClosestFishInFocus(), PhotoGallery[MaxFilm-CurrentFilm])
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>4040</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>1590</x><y>3460</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UPhotographyComponent
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1760</x><y>3490</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Text</id><coordinates><x>1420</x><y>3360</y><w>850</w><h>70</h></coordinates><panel_attributes>PhotographyComponent ResetCamera()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1750</x><y>3640</y><w>40</w><h>180</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1780</x><y>3650</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1830</x><y>3660</y><w>180</w><h>40</h></coordinates><panel_attributes>CurrentFilm = MaxFilm
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1780</x><y>3710</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1830</x><y>3780</y><w>180</w><h>40</h></coordinates><panel_attributes>CapturedFish.Empty()
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1830</x><y>3720</y><w>180</w><h>40</h></coordinates><panel_attributes>PhotoGallery.Empty()
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1780</x><y>3770</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>2700</x><y>3460</y><w>360</w><h>40</h></coordinates><panel_attributes>
+UPhotographyComponent
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>3240</x><y>3460</y><w>360</w><h>40</h></coordinates><panel_attributes>
+ACreature
+
+
+fontsize=28
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2870</x><y>3490</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2860</x><y>3640</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>3390</x><y>3640</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3400</x><y>3490</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>2890</x><y>3710</y><w>540</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;520;120;520;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2860</x><y>3790</y><w>40</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2870</x><y>3710</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>2870</x><y>3870</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=..
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2650</x><y>3920</y><w>570</w><h>260</h></coordinates><panel_attributes>if Fish != nullptr
+--
+transparency=100
+layer=-2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2860</x><y>3950</y><w>40</w><h>200</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2940</x><y>3970</y><w>300</w><h>40</h></coordinates><panel_attributes>CameraLoc = GetOwner()-&gt;GetActorLocation()
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2890</x><y>3960</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2480</x><y>3360</y><w>1030</w><h>70</h></coordinates><panel_attributes>PhotographyComponent UpdateFishInFocusDistances()
+style=wordwrap
+fontsize=38</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2910</x><y>3800</y><w>220</w><h>70</h></coordinates><panel_attributes>TempFish = FishEntry.Key
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>2620</x><y>3750</y><w>620</w><h>450</h></coordinates><panel_attributes>for auto&amp; FishEntry:  FishInFocus
+--
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2890</x><y>4030</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2940</x><y>4040</y><w>300</w><h>40</h></coordinates><panel_attributes>FishLoc = TempFish-&gt;GetActorLocation()
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2890</x><y>4090</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>2940</x><y>4100</y><w>300</w><h>40</h></coordinates><panel_attributes>FishInFocus[TempFish] = Distance
+style=wordwrap
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>3240</y><w>3770</w><h>1160</h></coordinates><panel_attributes>
+bg=blue
+layer=-1
+transparency=100</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>130</x><y>3280</y><w>850</w><h>70</h></coordinates><panel_attributes>Photography Component
+style=wordwrap
+fontsize=60</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>160</x><y>70</y><w>850</w><h>70</h></coordinates><panel_attributes>Photography Camera Actor
+style=wordwrap
+fontsize=60</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>3920</y><w>400</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>380;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>720</x><y>3900</y><w>110</w><h>30</h></coordinates><panel_attributes>CaptureScene()
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element></diagram>

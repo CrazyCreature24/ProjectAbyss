@@ -1,0 +1,81 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>72</x><y>376</y><w>424</w><h>560</h></coordinates><panel_attributes>&lt;&lt;AActor&gt;&gt;
+PhotographyCamera
+--
+Components:
++ SpringArmComponent: USpringArmComponent*
++ CameraComponent: UCameraComponent*
++ MeshComponent: UStaticMeshComponent*
++ PictureTakenSound: USoundBase*
++ SceneCaptureComponent: USceneCaptureComponent2D*
++ FocusHitboxComponent: UBoxComponent*
++ PhotographyCameraComponent: UPhotographyComponent*
+
+Variables:
+- MaxZoomDistance: float
+- ZoomSpeed: float
+- PictureCooldown: float
+- DefaultRotation: FRotator
+- ViewfinderClass: TSubclassOf&lt;UCameraViewfinder&gt;
+- Viewfinder: UCameraViewfinder*
+- DiverControllerRef: ADiverController*
+- DefaultCameraLocation: FVector
+- PictureTimerHandleCooldown: FTimerHandle
++ bIsAimingCam: bool
++ bCanTakePicture: bool
+
+--
++ APhotographyCamera()
++ Tick(DeltaTime: float): void &lt;override&gt;
++ SetAimingMode(bIsAiming: bool)
++ GetAimingMode(): bool
++ SetCanTakePicture(bCanTake: bool)
++ GetCanTakePicture(): bool
++ AimCamera(controller: ADiverController*): void
++ StopAimCamera(controller: ADiverController*): void
++ TakePicture(): void
++ ZoomIn(): void
++ ZoomOut(): void
++ ResetPictureCooldown(): void
+
+# OnFocusHitboxBeginOverlap(OverlappedComp: UPrimitiveComponent*,
+OtherActor: AActor*, OtherComp: UPrimitiveComponent*, OtherBodyIndex:  int32,
+bFromSweep: bool, SweepResult: const FHitResult&amp;): void
+# OnFocusHitboxEndOverlap(OverlappedComp: UPrimitiveComponent*,
+OtherActor: AActor*, OtherComp: UPrimitiveComponent*, OtherBodyIndex:  int32,
+bFromSweep: bool, SweepResult: const FHitResult&amp;): void
+# SetFocusHitboxCollision(bIsEnabled: bool): void
+# BeginPlay(): void &lt;override&gt;
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>504</y><w>424</w><h>280</h></coordinates><panel_attributes>&lt;&lt;UActorComponent&gt;&gt;
+PhotographyComponent
+--
++ PhotoGallery: TArray&lt;UTextureRenderTarget2D*&gt;
++ CapturedFish: TMap&lt;AFish*, UTextureRenderTarget2D&gt;
++ FishInFocus: TMap&lt;AFish*, float&gt;
++ CurrentFilm: int
++ MaxFilm: int
++ bIsAnyFishInFocus: bool
+
+--
++ UPhotographyComponent()
++ Tick(DeltaTime: float): void &lt;override&gt;
++ TakePicture(camera: APhotographyCamera*): void
++ ReloadCamera(): void
++ ResetCamera(): void
++ AddFishInFocus(FishToAdd: AFish*, DistanceToPlayer: float): void
++ GetFishInFocus(): TMap&lt;AFish*, float&gt;
++ RemoveFishInFocus(Fish: AFish*): void
++ UpdateFishInFocusDistances(): void
++ GetClosestFishInFocus: AFish*
+
+# BeginPlay(): void &lt;override&gt;
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>632</y><w>128</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>520</x><y>624</y><w>64</w><h>16</h></coordinates><panel_attributes>contains
+
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element></diagram>

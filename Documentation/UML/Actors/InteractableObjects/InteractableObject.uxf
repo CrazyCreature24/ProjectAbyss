@@ -1,0 +1,17 @@
+<diagram program="umletino" version="15.1"><zoom_level>19</zoom_level><element><id>UMLClass</id><coordinates><x>456</x><y>380</y><w>570</w><h>285</h></coordinates><panel_attributes>&lt;&lt;AActor&gt;&gt;
+InteractableActor
+--
+Components:
+- MeshComponent: UStaticMeshComponent*
+- HitboxComponent: UBoxComponent*
++ InteractHitboxComponent: UBoxComponent*
+
++ bIsLocked: bool
+--
++ Interacted(): virtual void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>342</x><y>817</y><w>285</w><h>76</h></coordinates><panel_attributes>&lt;&lt;AInteractableObject&gt;&gt;
+BoatWheel</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>874</x><y>817</y><w>285</w><h>76</h></coordinates><panel_attributes>&lt;&lt;AInteractableObject&gt;&gt;
+PCTerminal</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>722</x><y>760</y><w>190</w><h>57</h></coordinates><panel_attributes>is a
+
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>646</y><w>589</w><h>209</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;60;290;60;290;90;290;60;10;60;10;90</additional_attributes></element></diagram>

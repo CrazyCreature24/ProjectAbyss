@@ -1,0 +1,80 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>810</x><y>100</y><w>160</w><h>100</h></coordinates><panel_attributes>Main Quest 1
+--
+_Objective_
+Picture of fish 1
+--
+_Reward_
+30 gold</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>360</y><w>160</w><h>100</h></coordinates><panel_attributes>Main Quest 3
+--
+_Objective_
+Picture of fish 4
+--
+_Reward_
+30 gold</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>360</y><w>160</w><h>110</h></coordinates><panel_attributes>Main Quest 2
+--
+_Objective_
+Picture of fish 2
+Picture of fish 3
+--
+_Reward_
+70 gold</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>190</y><w>180</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;170;10;90;160;90;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>190</y><w>180</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;170;160;90;10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>490</y><w>190</w><h>110</h></coordinates><panel_attributes>Side Quest 1
+--
+_Objective_
+Picture of fish 5
+--
+_Reward_
+30 gold
+1x Decoy Launcher Equipment</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>600</y><w>160</w><h>110</h></coordinates><panel_attributes>Main Quest 4
+--
+_Objective_
+Picture of fish 6
+--
+_Reward_
+70 gold
+Access to Depth Upgrade 1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>460</y><w>190</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;140;170;70;10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>400</y><w>210</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;90;190;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>450</y><w>170</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;150;10;80;150;80;150;10</additional_attributes></element><element><id>Text</id><coordinates><x>830</x><y>510</y><w>130</w><h>30</h></coordinates><panel_attributes>finish BOTH to unlock
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>840</x><y>280</y><w>130</w><h>30</h></coordinates><panel_attributes>finish to unlock
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1160</x><y>410</y><w>130</w><h>30</h></coordinates><panel_attributes>finish to unlock
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>610</x><y>570</y><w>140</w><h>70</h></coordinates><panel_attributes>If 2 arrows lead to 1 
+quest, both need to be 
+completed to unlock
+it
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>520</y><w>180</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>160;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>880</y><w>160</w><h>110</h></coordinates><panel_attributes>Main Quest 4
+--
+_Objective_
+Picture of fish 6
+--
+_Reward_
+70 gold
+Access to Depth Upgrade 1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>880</y><w>160</w><h>110</h></coordinates><panel_attributes>Main Quest 4
+--
+_Objective_
+Picture of fish 6
+--
+_Reward_
+70 gold
+Access to Depth Upgrade 1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>880</y><w>160</w><h>110</h></coordinates><panel_attributes>Main Quest 4
+--
+_Objective_
+Picture of fish 6
+--
+_Reward_
+70 gold
+Access to Depth Upgrade 1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>700</y><w>260</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>240;180;240;90;10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>700</y><w>250</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;180;10;90;230;90;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>700</y><w>30</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>1020</y><w>190</w><h>110</h></coordinates><panel_attributes>Side Quest 1
+--
+_Objective_
+Picture of fish 5
+--
+_Reward_
+30 gold
+1x Decoy Launcher Equipment</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>920</y><w>320</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;100;10;10;300;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1500</x><y>1020</y><w>190</w><h>110</h></coordinates><panel_attributes>Side Quest 1
+--
+_Objective_
+Picture of fish 5
+--
+_Reward_
+30 gold
+1x Decoy Launcher Equipment</panel_attributes><additional_attributes></additional_attributes></element></diagram>

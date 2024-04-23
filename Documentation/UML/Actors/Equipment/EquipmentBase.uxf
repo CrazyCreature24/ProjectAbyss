@@ -1,0 +1,23 @@
+<diagram program="umletino" version="15.1"><zoom_level>20</zoom_level><element><id>UMLClass</id><coordinates><x>280</x><y>100</y><w>600</w><h>640</h></coordinates><panel_attributes>&lt;&lt;AActor&gt;&gt;
+EquipmentBase
+--
+Components:
++ MeshComponent: UStaticMeshComponent*
++ HitboxComponent: UBoxComponent*
++ HotbarImage: UTexture2D*
+
+# bIsConsumable: bool
+# bIsHeld: bool
+# bIsInInventory: bool
+# bIsPermanent: bool (for Camera, mainly)
+# Cooldown: float
+# ExpiryTime: float
++ ShopCost: int32
++ SellBackPrice: int32
+--
+# UsePrimary(): virtual void
+# UseSecondary(): virtual void
+# RotateItem(): virtual void
+# OnOverlapBegin(): virtual void override
+# OnDropped(): virtual void
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

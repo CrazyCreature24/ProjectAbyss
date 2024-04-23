@@ -1,0 +1,28 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>570</x><y>390</y><w>530</w><h>350</h></coordinates><panel_attributes>&lt;&lt;UActorComponent&gt;&gt;
+PhotographyComponent
+--
++ PhotoGallery: TArray&lt;UTextureRenderTarget2D*&gt;
++ CapturedFish: TMap&lt;AFish*, UTextureRenderTarget2D&gt;
++ FishInFocus: TMap&lt;AFish*, float&gt;
++ CurrentFilm: int
++ MaxFilm: int
++ bIsAnyFishInFocus: bool
+
+--
++ UPhotographyComponent()
++ Tick(DeltaTime: float): void &lt;override&gt;
++ TakePicture(camera: APhotographyCamera*): void
++ ReloadCamera(): void
++ ResetCamera(): void
++ AddFishInFocus(FishToAdd: AFish*, DistanceToPlayer: float): void
++ GetFishInFocus(): TMap&lt;AFish*, float&gt;
++ RemoveFishInFocus(Fish: AFish*): void
++ UpdateFishInFocusDistances(): void
++ GetClosestFishInFocus: AFish*
+
+# BeginPlay(): void &lt;override&gt;
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

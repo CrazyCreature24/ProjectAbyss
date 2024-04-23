@@ -1,0 +1,241 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>744</x><y>8</y><w>424</w><h>496</h></coordinates><panel_attributes>&lt;&lt;AActor&gt;&gt;
+_AMissionBase_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+QuestID: FName
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+QuestDetails: FQuestDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+CurrentStage: int
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+CurrentStageDetails: FStageDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+CurrentObjectiveDetails: TArray&lt;FQuestObjectiveProgress&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+IsComplete: bool
+
+UPROPERTY(BlueprintAssignable, Category = "Objective")
+ObjectiveUpdated: FObjectiveUpdated
+--
+AMissionBase():void 
+
+UFUNCTION(BlueprintCallable)
+OnObjectiveIDHeared(ObjectiveID: FString): void
+
+UFUNCTION(BlueprintCallable)
+SetMissionDetails(): void
+
+UFUNCTION(BlueprintCallable)
+ObjectiveDataByID(FString: ObjectiveID): FObjectiveDetails
+
+UFUNCTION(BlueprintCallable)
+CheckObjectiveAreComplete(): bool
+
+UFUNCTION(BlueprintCallable)
+MoveToNextStage(): void
+
+BeginPlay(): virtual void override</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>456</x><y>552</y><w>240</w><h>328</h></coordinates><panel_attributes>USTRUCT(BlueprintType) 
+&lt;&lt;FTableRowBase&gt;&gt;
+_FMissionDetails_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+MissionName: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+LogDescription: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+TrackingDescription: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Type: EMissionType
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Stage: TArray&lt;FStageDetails&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Biome: EBiome = EBiome::Shallows
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+DepthUpgradeRequired: EDepthUpgradeRequired
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+PrequisiteMissions: TArray&lt;FName&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>464</x><y>328</y><w>224</w><h>208</h></coordinates><panel_attributes>USTRUCT(BlueprintType) 
+_FStageDetails_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+StageName: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Description: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Objectives: TArray&lt;FObjectiveDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+MoneyReward: int = 0
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ItemReward: ??? (Currently Not Implemented)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>464</x><y>40</y><w>224</w><h>240</h></coordinates><panel_attributes>USTRUCT(BlueprintType) 
+_FObjectiveDetails_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ObjectiveName: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Description: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Type: EObjectiveType = EObjectiveType::Picture
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ObjectiveID: FString
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Quantity: int = 1
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+isOptional: bool = false</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>40</y><w>232</w><h>88</h></coordinates><panel_attributes>UENUM()
+&lt;&lt;uint8&gt;&gt;
+__EObjectiveType__
+--
+Location = 0 UMETA(DisplayName = "Location")
+
+Picture = 1 UMETA(DisplayName = "Picture")</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>496</y><w>216</w><h>80</h></coordinates><panel_attributes>UENUM()
+&lt;&lt;uint8&gt;&gt;
+__EMissionType__
+--
+Main = 1 UMETA(DisplayName = "Main")
+
+Side = 2 UMETA(DisplayName = "Side")</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>744</x><y>648</y><w>272</w><h>104</h></coordinates><panel_attributes>USTRUCT(BlueprintType) 
+FMissionObjectiveProgress
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ObjectiveID: FString
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ObjectiveCount: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1192</x><y>8</y><w>488</w><h>936</h></coordinates><panel_attributes>&lt;&lt;UGameInstanceSubsystem&gt;&gt;
+UMissionLogSubsystem
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+MissionTable: UDataTable*
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+CurrentActiveMissions: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+CompletedMissions: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+UnavailableMainMissions: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+AvailableMainMissions: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+CurrentTrackedMission: CurrentTrackedQuest
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+UnavailableSideMissions: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+AvailableSideMissions: TArray&lt;FName&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Variable", Replicated)
+CurrentMissions: TArray&lt;AMissionBase*&gt;
+
+UPROPERTY(BlueprintAssignable, Category = "Delegate")
+ObjectiveIDCalled: FObjectiveIDCalled
+
+UPROPERTY(BlueprintAssignable, Category = "Delegate")
+MissionWasCompleted: FMissionWasCompleted
+
+UPROPERTY(BlueprintAssignable, Category = "Delegate")
+MissionTrackingChange: FMissionTrackingChange
+
+UPROPERTY(BlueprintAssignable, Category = "Delegate")
+PrerequisiteMet : FPrerequisiteMet
+--
+UMissionLogSubsystem():void 
+
+UFUNCTION(BlueprintCallable)
+AddNewMission(MissionID: FName): void
+
+UFUNCTION(BlueprintCallable)
+CompleteMission(CompletedMission: AMissionBase*): void
+
+UFUNCTION(BlueprintCallable)
+QueryActiveMissions(MissionID: FName): bool
+
+UFUNCTION(BlueprintCallable)
+TrackMission(MissionID: FName): void
+
+UFUNCTION(BlueprintCallable)
+NewGameMissionSetup(): void
+
+UFUNCTION(BlueprintCallable)
+LoadMissionsFromSave(): void
+
+UFUNCTION(BlueprintCallable)
+GetMissionDetails(MissionID: FName): FMissionDetails
+
+UFUNCTION(BlueprintCallable)
+CheckPrequisites(): void
+
+UFUNCTION(BlueprintCallable)
+CallObjectiveID(ObjectiveID: FString): void
+
+UFUNCTION(BlueprintCallable)
+GetMissionPtr(MissionID: FName): AMissionBase*
+
+UFUNCTION(BlueprintCallable)
+ResetArrays(): void
+
+GetLifetimeReplicatedProps(OutLifetimeProps: TArray&lt;FLifetimeProperty&gt;&amp;) const override: virtual void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1048</x><y>656</y><w>80</w><h>32</h></coordinates><panel_attributes>UDataTable
+&lt;&lt;Blueprint&gt;&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>744</x><y>544</y><w>376</w><h>88</h></coordinates><panel_attributes>&lt;&lt;UActorComponent&gt;&gt;
+_UMissionObjectiveIDComponent_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Objective Variable")
+ObjectiveID: TArray&lt;FString&gt;
+--
+UFUNCTION(BlueprintCallable)
+BroadcastObjectiveIDs();
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>752</y><w>256</w><h>136</h></coordinates><panel_attributes>UENUM()
+&lt;&lt;uint8&gt;&gt;
+__EDepthUpgradeRequired__
+--
+Upgrade_0 = 0 UMETA(DisplayName = "Upgrade_0")
+
+Upgrade_1 = 1 UMETA(DisplayName = "Upgrade_1")
+
+Upgrade_2 = 2 UMETA(DisplayName = "Upgrade_2")
+
+Upgrade_3 = 3 UMETA(DisplayName = "Upgrade_3")
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>592</y><w>256</w><h>136</h></coordinates><panel_attributes>UENUM()
+&lt;&lt;uint8&gt;&gt;
+__EBiome__
+--
+Shallows = 0 UMETA(DisplayName = "Main")
+
+Crystal = 1 UMETA(DisplayName = "Crystal")
+
+Volcanic = 2 UMETA(DisplayName = "Volcanic  Waste")
+
+Abyss = 3 UMETA(DisplayName = "Abyss ")</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>304</y><w>144</w><h>32</h></coordinates><panel_attributes>BP_MissionTrackerPrototype
+&lt;&lt;Blueprint&gt;&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>352</y><w>144</w><h>32</h></coordinates><panel_attributes>WBP_MissionTrackerPrototype
+&lt;&lt;Blueprint&gt;&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>400</y><w>144</w><h>32</h></coordinates><panel_attributes>WBP_MissionObjectiveWIdget
+&lt;&lt;Blueprint&gt;&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>256</x><y>192</y><w>112</w><h>64</h></coordinates><panel_attributes>These are currently 
+blueprint prototypes
+and will either be 
+removed or updated to
+c++ in the future.
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>216</x><y>280</y><w>192</w><h>160</h></coordinates><panel_attributes>&lt;&lt;Prototypes&gt;&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>304</x><y>248</y><w>24</w><h>48</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>744</x><y>824</y><w>120</w><h>24</h></coordinates><panel_attributes>UMissionUserWidget
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>744</x><y>768</y><w>112</w><h>32</h></coordinates><panel_attributes>More information in 
+PC MDD
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>792</y><w>24</w><h>48</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element></diagram>

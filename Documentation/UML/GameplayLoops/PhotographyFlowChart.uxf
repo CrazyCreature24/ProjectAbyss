@@ -1,0 +1,119 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram note</help_text><element><id>UMLClass</id><coordinates><x>632</x><y>360</y><w>85</w><h>15</h></coordinates><panel_attributes>Right click to pull up camera</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>427</x><y>425</y><w>75</w><h>15</h></coordinates><panel_attributes>Left click to take picture</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>457</x><y>370</y><w>225</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;110;430;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>877</x><y>425</y><w>115</w><h>15</h></coordinates><panel_attributes>Releases right click to not hold camera</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>370</y><w>270</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>520;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>427</x><y>490</y><w>75</w><h>15</h></coordinates><panel_attributes>Picture stored in camera</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>457</x><y>435</y><w>15</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>252</x><y>590</y><w>90</w><h>10</h></coordinates><panel_attributes>Upload pictures in PC Terminal</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>292</x><y>500</y><w>180</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;180;340;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>207</x><y>665</y><w>90</w><h>25</h></coordinates><panel_attributes>Collection is filled with
+unique pictures taken of new 
+fish</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>327</x><y>665</y><w>90</w><h>25</h></coordinates><panel_attributes>Reward is given for each
+picture of fish (diff values)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>595</y><w>85</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>917</x><y>585</y><w>90</w><h>60</h></coordinates><panel_attributes>AFish
+--
+Value: float
+Name: FName
+Size Class: EFishSizeClass
+Rarity: EFishRarity
+
+has tag: Fish</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>595</y><w>65</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;140;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>367</x><y>685</y><w>15</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>327</x><y>755</y><w>90</w><h>25</h></coordinates><panel_attributes>Camera roll gets refilled to max 
+amount</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>667</x><y>370</y><w>80</w><h>75</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>687</x><y>435</y><w>100</w><h>50</h></coordinates><panel_attributes>Constant check to see closest fish
+in focus. Most likely using hitbox
+check attached to camera. If fish is
+ in focus, display effect in 
+camera widget
+(Like BOTW)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>787</x><y>495</y><w>120</w><h>55</h></coordinates><panel_attributes>Orange means it isnt currently collected.
+probably a Orange with ??? text
+
+blue outline and text 
+means youve taken a pic of it
+before
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>782</x><y>455</y><w>70</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;120;80</additional_attributes></element><element><id>Relation</id><coordinates><x>657</x><y>595</y><w>15</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>617</x><y>590</y><w>90</w><h>10</h></coordinates><panel_attributes>Player dies</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>617</x><y>695</y><w>90</w><h>30</h></coordinates><panel_attributes>Stored contents in the camera
+is removed and camera is 
+reset to default state.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>500</y><w>210</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-
+bg=red</panel_attributes><additional_attributes>400;180;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>287</x><y>400</y><w>140</w><h>55</h></coordinates><panel_attributes>Code
+--
+
+Calls photography component "TakePicture"
+this function stores a temp RenderTarget and
+applies it to a TArray of 20 Render target 2ds. 
+This render target is set using the SceneCaptures
+CaptureScene function.
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>492</x><y>335</y><w>140</w><h>45</h></coordinates><panel_attributes>Code
+--
+
+Player right clicks and
+calls photography  component "Pull up camera"
+function. This is mainly a bool of
+"IsAimingCamera"
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>12</x><y>340</y><w>205</w><h>130</h></coordinates><panel_attributes>PhotographyComponent (BASIC IDEA)
+--
++ SceneCapture: SceneCaptureComponent
++ FocusHitbox: UBoxComponent
++ PhotoGallery: TArray&lt;20&gt; TextureRender2D
++ FishPictures: TMap&lt;Fish: TArray&lt;AFish&gt;, DistanceToPlayer: float&gt;
++ CameraFilm: int
++ CameraFilmMax: int
++ IsAimingCamera: bool
+
+--
++ TakePicture(): void
++ ReloadCamera(): void
++ ResetCamera(): void
++ SpawnFocusHitbox(): void
+
++ FocusOnOverlapBegin(): void &lt;override&gt;
++ FocusOnOverlapEnd(): void &lt;override&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>547</x><y>415</y><w>140</w><h>80</h></coordinates><panel_attributes>Code
+--
+
+Constant hitbox that is enabled when right click
+is held. This hitbox scans for OnOverlap, and
+stores fish that enter with a TMap based on
+distance. in OnOverlapEnd, they will be 
+removed from the TMap. There will be a 
+constant distance check on which fish is
+closest (if there are multiple). The fish that
+is closest will have the "FocusWidget" enabled
+and tracking the current fish.
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>287</x><y>465</y><w>140</w><h>55</h></coordinates><panel_attributes>Code
+--
+
+Uses focus hitbox to store data of succesful fish 
+pictures in a TArray. So a TArray of fish, mainly
+for the names. 
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>67</x><y>645</y><w>140</w><h>55</h></coordinates><panel_attributes>Code
+--
+
+For loop of every fish picture in camera, and 
+compares it to pictures of fish inside of collection.
+If name of TArray of fish in camera do not already
+exist inside of collection journal, 
+called CollectionJournal.AddEntry
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>247</x><y>685</y><w>15</w><h>75</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>207</x><y>750</y><w>90</w><h>25</h></coordinates><panel_attributes>Award player with bonus gold 
+if new entry is filled out</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>47</x><y>730</y><w>160</w><h>55</h></coordinates><panel_attributes>Code
+--
+
+In CollectionJournal.AddEntry(Fish), based on the fish
+inputted parameter, get the value and add the amount
+to players currency
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>417</x><y>645</y><w>165</w><h>55</h></coordinates><panel_attributes>Code
+--
+
+In CollectionJournal.UploadPhoto(Fish), based on the fish
+inputted parameter, get the value and add the amount
+to players currency
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>417</x><y>735</y><w>165</w><h>55</h></coordinates><panel_attributes>Code
+--
+
+Refills PhotographyFilm to max amount.
+ReloadCamera();
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>707</x><y>685</y><w>165</w><h>45</h></coordinates><panel_attributes>Code
+--
+
+Removes contents of stored fish/picture data.
+ResetCamera();
+Refills PhotographyFilm to max amount.
+ReloadCamera();
+
+bg=red
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

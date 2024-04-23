@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>37</x><y>440</y><w>517</w><h>275</h></coordinates><panel_attributes>&lt;&lt;UActorComponent&gt;&gt;
+InventoryComponent
+--
++ Inventory: TArray&lt;AEquipmentBase*&gt;
++ MaxInventorySlots: int32
+
+--
++ AddToInventory(Equipment: AEquipmentBase*): bool
++ AddToHotbarInventory(Equipment: AEquipmentBase*): bool
++ RemoveFromInventory(Equipment: AEquipmentBase*): bool
++ SwapEquipment(EquipmentA: int32, EquipmentB: int32): bool
++ SwapEquipmentBetweenInventories(UInventoryComponent, int32, int32): bool
++ GetEquipmentAtIndex(Equipment: int32): AEquipmentBase*
++ GetEquipmentByType(Equipment: AEquipmentBase*)
++ SetEquipmentAtIndex(Index: int32, Equipment: AEquipmentBase*)
++ DropEquipment(int32: Index): void
++ ChangeHotbarImage(Index: Int32, Equipment: AEquipmentBase*): void
++ SetEquipmentVisibility(Index: int32): void
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

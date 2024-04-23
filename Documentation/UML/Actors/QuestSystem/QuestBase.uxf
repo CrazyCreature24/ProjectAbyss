@@ -1,0 +1,106 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>1045</x><y>638</y><w>506</w><h>363</h></coordinates><panel_attributes>&lt;&lt;AActor&gt;&gt;
+_AQuestBase_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+QuestID: FName
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+QuestDetails: FQuestDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+CurrentStage: int
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+CurrentStageDetails: FStageDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+CurrentObjectiveDetails: TMap&lt;FString, int&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Variable")
+IsComplete: bool
+--
+AQuestBase()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>561</x><y>836</y><w>330</w><h>352</h></coordinates><panel_attributes>USTRUCT(BlueprintType) 
+&lt;&lt;FTableRowBase&gt;&gt;
+_FQuestDetails_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+QuestName: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+LogDescription: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+TrackingDescription: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Type: EQuestType
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Stage: TArray&lt;FStageDetails&gt;
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Prerequisites: TArray&lt;FName&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>594</x><y>0</y><w>330</w><h>330</h></coordinates><panel_attributes>USTRUCT(BlueprintType) 
+_FObjectiveDetails_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ObjectiveName: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Description: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Type: EObjectiveType
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ObjectiveID: FString
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Quantity: int
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+isOptional: bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>561</x><y>440</y><w>330</w><h>286</h></coordinates><panel_attributes>USTRUCT(BlueprintType) 
+_FStageDetails_
+--
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+StageName: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Description: FText
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+Objectives: TArray&lt;FObjectiveDetails
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+MoneyReward: int
+
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ItemReward: ???
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>121</y><w>319</w><h>121</h></coordinates><panel_attributes>UENUM()
+&lt;&lt;uint8&gt;&gt;
+__EObjectiveType__
+--
+Location = 0 UMETA(DisplayName = "Location")
+
+Picture = 1 UMETA(DisplayName = "Picture")</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>176</x><y>935</y><w>231</w><h>88</h></coordinates><panel_attributes>UENUM()
+&lt;&lt;uint8&gt;&gt;
+__EQuestType__
+--
+???</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>946</y><w>187</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Contains
+m1=1
+m2=1</panel_attributes><additional_attributes>10;130;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>616</y><w>187</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Contains
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;150;140</additional_attributes></element><element><id>Relation</id><coordinates><x>748</x><y>715</y><w>88</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Contains
+m1=1
+m2=1...n</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>737</x><y>319</y><w>88</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Contains
+m1=1
+m2=1...</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>165</y><w>198</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Contains
+m1=1
+m2=1</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>968</y><w>187</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Contains
+m1=1
+m2=1</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element></diagram>
